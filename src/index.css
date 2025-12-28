@@ -1,0 +1,44 @@
+@import "tailwindcss";
+/* @media print {
+  .no-print {
+    display: none !important;
+  }
+  .printable {
+    display: block !important;
+  }
+} */
+
+@media print {
+  body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-size: 12pt; /* ឬ according to your need */
+  }
+
+  /* Center the table */
+  table {
+    margin: 0 auto;
+    width: 80%; /* ឬ 100% ប្រសិនចង់ទទឹងពេញក្រឡា */
+    border-collapse: collapse;
+  }
+
+  th, td {
+    border: 1px solid black;
+    padding: 4px 6px;
+    text-align: center;
+  }
+
+  /* Hide everything except table */
+  .print-hidden {
+    display: none !important;
+  }
+
+  /* Optional: make table font readable */
+  table, th, td {
+    font-family: 'Noto Sans Khmer', sans-serif;
+  }
+}
+
+
+
